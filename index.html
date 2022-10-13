@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Academlo Store</title>
+</head>
+<body>
+    
+
+    <header>
+          <nav class="principal-nav">     
+              <nav class="menu-bar-left">      
+                <svg class="logo-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48">
+                  <title>Academlo Logo</title>
+                  <g>
+                    <g>
+                      <path
+                        d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                      </path>
+                    </g>
+                  </g>
+              </svg>  
+                <h1>STORE</h1>
+                <ul class="menu-nav" id="menunav">
+                  <i class='bx bx-x' id="closemenu-nav"></i>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Products</a></li>
+                </ul>
+          </nav>
+
+          <nav class="menu-bar-right">
+            <i class='bx bx-moon bx-sm colocar' id="darkmode"></i>
+
+            <div style="position: relative;">
+              <i class='bx bxs-shopping-bags bx-sm colocar' id="shopbag"></i>
+              <div class="cantidad-items-head" id="cantidad-items-head">0</div>
+            </div>
+            
+            <i class='bx bx-menu bx-md' id="menuicono"></i>
+          </nav>  
+      </nav>
+
+      <section class="header-seccion">        
+        <div class="content-product-header">
+          <h1>New Sweatshirt COLLECTIONS 2022</h1>
+          <p>the new moda is te Sweatshirt black and white, why do you buy now buddy?? Lorem ipsum dolor sit</p>
+          <span class="price-principal">$40.00</span>
+          <div class="botones-principal">
+            <button class="header-boton">Discover</button>
+            <button class="header-boton add-cart" onclick="add_to_cart(2)">Add to Cart!</button>
+          </div>
+        </div>        
+        <img class="imagen-principal" src="./assets/images/featured2.png">
+      </section>         
+</header>
+
+
+<section class="cart hide" id="cartPadreSeccion">
+  <i class='bx bx-x' id="closeshopbag"></i>
+  <h2>MY CART</h2>
+
+  <div class="contenido-cart" id="contenido-cart"></div>
+
+  <div class="cart-valores">
+      <div class="cantidad-items"><span class="cantidad-items-num" id="cantidad-items-num">0</span> Items</div>
+      <div class="monto-total" id="monto-total">0.00</div>
+  </div>
+
+  <button class="header-boton">Checkout</button>
+</section>
+
+
+<main>
+  <section class="filtrado-seccion">
+    <div class="filtrado">
+      <p>Show All</p>
+      <small>show all Products</small>
+    </div>
+    <div class="filtrado">
+      <p>Show All</p>
+      <small>show all Products</small>
+    </div>
+    <div class="filtrado">
+      <p>Show All</p>
+      <small>show all Products</small>
+    </div>
+    <div class="filtrado">
+      <p>Show All</p>
+      <small>show all Products</small>
+    </div>
+  </section>
+  <article class="productos" id="cajapadre-productos">
+
+  </article>
+</main>
+
+<footer class="pie-pag">
+  <section class="footer-seccion">
+    <div class="pie-item">
+      <h3 class="our-information">Our information</h3>
+      <p>Perú - Tarapoto</p>
+    </div>
+    <div class="pie-item">
+      <h3>About Us</h3>
+      <ul  class="ul-pie">
+        <li><a href="#">Support center</a></li>
+        <li><a href="#">Customer Support</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Copyright</a></li>
+      </ul>
+    </div>
+    <div class="pie-item">
+      <h3>Product</h3>
+      <ul class="ul-pie">
+        <li><a href="#">Hooders</a></li>
+        <li><a href="#">Shirts</a></li>
+        <li><a href="#">Sweatshirt</a></li>
+      </ul>
+    </div>
+    <div class="pie-item">
+      <h3>Social</h3>
+      <i class='bx bxl-instagram bx-md'></i>
+      <i class='bx bxl-facebook-circle bx-md'></i>
+      <i class='bx bxl-twitter bx-md'></i>
+    </div>
+  </section>
+</footer>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
